@@ -1,0 +1,137 @@
+/* 假设这是包含封面和排序筛选模块的容器 */
+.indicator {
+    opacity: 0.5;   /* 已读图标透明度 */
+}
+
+
+
+.container {
+  margin-top: -30cm; /* 向上移动30cm（之前是20cm，现在再加10cm） */
+}
+
+/* 确保筛选排序模块置顶 */
+#sortAndFilterModule {
+  position: relative; /* 使用相对定位 */
+  top: -30cm; /* 向上移动30cm */
+  z-index: 10; /* 确保这个模块在其他元素之上 */
+}
+
+/* 确保筛选排序模块的文字置顶 */
+#sortAndFilterModule .sortFilterText {
+  position: absolute; /* 使用绝对定位 */
+  top: 0; /* 顶部对齐 */
+  left: 0; /* 左侧对齐 */
+  z-index: 20; /* 确保文字在模块之上 */
+}
+
+/* 其他模块的调整 */
+.otherModule {
+  margin-top: 30cm; /* 根据需要调整其他模块的顶部边距 */
+}
+
+/* 确保原有项目不被覆盖 */
+.originalProject {
+  position: relative; /* 使用相对定位 */
+  z-index: 15; /* 确保原有项目在筛选排序模块之下 */
+}
+
+
+.card {
+  width: calc(12.5% - 10px); /* 假设每个卡片左右有5px的间距，总共10px */
+  margin-right: 5px; /* 右边距 */
+  margin-bottom: 10px; /* 底部间距 */
+  float: left; /* 使卡片并排显示 */
+}
+
+.card:nth-child(8n) { /* 每8个卡片后，右边距设置为0 */
+  margin-right: 0;
+}
+
+.card:last-child { /* 最后一个卡片的右边距也设置为0 */
+  margin-right: 0;
+}
+
+.card .innerCardFooter,
+.localUsers .card .cardFooter,
+#divUsers .card .cardFooter,
+.installedPlugins .card .cardFooter,
+#divVirtualFolders .card .cardFooter,
+.devicesList .card .cardFooter {
+  width: 100%; /* 确保底部信息栏宽度与卡片宽度一致 */
+}
+
+
+.vertical-wrap.itemsContainer {
+    margin-top: 160px; /* 整个封面大模块与顶部距离 */
+}
+
+.vertical-wrap .portraitCard {
+    margin-bottom: -10px; /* 调整为你想要的行距 */
+}
+
+.sticky-top {
+    position: -webkit-sticky; /* 将筛选那一行变成浮动*/
+    position: sticky;
+    top: -10px; /* 或者你希望的其他值，例如 60px */
+    z-index: 1000; /* 确保它在页面的其他内容之上 */
+    margin-top: -280px; /* 根据需要调整这个值 */
+   width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.headerTop .headerLeft {
+    transform: scale(1);
+    transform-origin: top left;
+}
+
+.cardText.cardTextCentered.cardText-secondary {
+    display: none;
+}
+.cardText.cardTextCentered:empty {
+    display: none;
+}
+
+
+.cardBox.cardBox-bottompadded {
+  height: 165px !important;   /* 封面外框大小 */
+  width:90px; !important;
+
+}
+
+.cardIndicators {
+    left: 30px;
+}
+
+/* 其他样式保持不变 */
+<style>
+/* 假设这是你现有的样式 */
+.content-primary,
+.padded-bottom-page,
+.page,
+.pageWithAbsoluteTabs .pageTabContent {
+  padding-bottom: 5em !important;
+}
+
+/* 添加的外边距样式 */
+.content-primary,
+.padded-bottom-page,
+.page,
+.pageWithAbsoluteTabs .pageTabContent {
+ // margin-left: -30px;
+  // margin-right: -40px;
+}
+/* 封面大小 */
+.cardScalable {
+    margin-top:0px;
+height: 160px; 
+width: 110px;
+}
+/* 封面图片顶部对齐 */
+.cardImageContainer {
+  //background-size: auto !important; /* 确保背景图片不被缩放 */
+  background-repeat: no-repeat; /* 确保背景图片不重复 */
+  background-position: top center; /* 确保背景图片顶部对齐 */
+}
+</style>
+
