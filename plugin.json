@@ -1,6 +1,6 @@
 [
   {
-    "guid": "your-unique-guid-here",  // 替换为唯一的 GUID
+    "guid": "01cc53ec-c415-4108-bbd4-a684a9801a32",  // 替换为唯一的 GUID
     "name": "Numeric Pagination",
     "description": "A plugin for numeric pagination in Jellyfin.",
     "overview": "Provides numeric pagination functionality for Jellyfin.",
@@ -9,7 +9,7 @@
     "imageUrl": "https://raw.githubusercontent.com/metatube-community/jellyfin-plugin-metatube/main/Jellyfin.Plugin.MetaTube/thumb.png",  // 替换为插件的图标 URL
     "versions": [
       {
-        "checksum": "your-checksum-here",  // 替换为插件版本的 checksum
+        
         "changelog": "Initial release of Numeric Pagination plugin.",
         "targetAbi": "10.10.0.0",  // 根据兼容性设置
         "sourceUrl": "https://raw.githubusercontent.com/jtgtifh/alist/refs/heads/main/NumericPagination.zip",  // 替换为插件 ZIP 文件的 URL
