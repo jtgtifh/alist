@@ -1,17 +1,21 @@
-{
-  "targets": {
-    ".NETCoreApp,Version=v8.0": {
-      "NumericPagination/1.0.0": {
-        "dependencies": {
-          "Jellyfin.Controller": "10.10.3",
-          "Jellyfin.Model": "10.10.3"
-        },
-        "runtime": {
-          "NumericPagination.zip": {
-            "url": "https://raw.githubusercontent.com/jtgtifh/alist/refs/heads/main/NumericPagination.zip"
-          }
-        }
+[
+  {
+    "guid": "your-unique-guid-here",  // 替换为唯一的 GUID
+    "name": "Numeric Pagination",
+    "description": "A plugin for numeric pagination in Jellyfin.",
+    "overview": "Provides numeric pagination functionality for Jellyfin.",
+    "owner": "Your Name",
+    "category": "Enhancement",  // 可以根据您的插件类型进行调整
+    "imageUrl": "https://raw.githubusercontent.com/metatube-community/jellyfin-plugin-metatube/main/Jellyfin.Plugin.MetaTube/thumb.png",  // 替换为插件的图标 URL
+    "versions": [
+      {
+        "checksum": "your-checksum-here",  // 替换为插件版本的 checksum
+        "changelog": "Initial release of Numeric Pagination plugin.",
+        "targetAbi": "10.10.0.0",  // 根据兼容性设置
+        "sourceUrl": "https://raw.githubusercontent.com/jtgtifh/alist/refs/heads/main/NumericPagination.zip",  // 替换为插件 ZIP 文件的 URL
+        "timestamp": "2024-04-24T00:00:00Z",  // 当前版本的发布时间
+        "version": "1.0.0"
       }
-    }
+    ]
   }
-}
+]
