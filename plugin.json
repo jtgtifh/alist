@@ -6,7 +6,7 @@
     "overview": "Provides numeric pagination functionality for Jellyfin.",
     "owner": "Your Name",
     "category": "Enhancement",  // 可以根据您的插件类型进行调整
-    "imageUrl": "",  // 替换为插件的图标 URL
+    "imageUrl": "https://repo.jellyfin.org/releases/plugin/images/jellyfin-plugin-fanart.png",  // 替换为插件的图标 URL
     "versions": [
       {
        
